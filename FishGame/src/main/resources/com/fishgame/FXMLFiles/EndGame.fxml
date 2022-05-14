@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" style="-fx-background-color: Transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fishgame.EndGameController">
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="267.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="68.0">
+        <Image url="@../ImageFiles/FishGameLogo.png" />
+    </ImageView>
+    <Label layoutX="225.0" layoutY="218.0" text="FishGame" textFill="WHITE">
+        <font>
+            <Font name="Segoe UI Black" size="40.0" />
+        </font>
+    </Label>
+    <Label layoutX="269.0" layoutY="266.0" text="By WalkieJVC" textFill="WHITE">
+        <font>
+            <Font name="Segoe UI Black" size="15.0" />
+        </font>
+    </Label>
+    <Label fx:id="_finalMessageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="317.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="614.0" text="Better Luck Next Time GamerTag!" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Segoe UI Black" size="25.0" />
+        </font>
+    </Label>
+   <Label fx:id="_scoreLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="445.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="614.0" text="Your Score: 52.4%" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="_personalBestLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="481.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="614.0" text="Your Heighest Score: 3.5%" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="_localBestLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="517.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="614.0" text="First Place In Your Country: 1.5%" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="_worldWideBestLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="553.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="614.0" text="First Place World Wide: 0.95%" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="15.0" />
+      </font>
+   </Label>
+    <Button id="_tryAgainButton" layoutX="160.0" layoutY="609.0" mnemonicParsing="false" onAction="#ToGameInitializerPage" onMouseEntered="#HoverEnter" onMouseExited="#HoverExit" prefHeight="44.0" prefWidth="150.0" style="-fx-background-color: Transparent;" text="Try Again" textFill="WHITE">
+        <font>
+            <Font name="Segoe UI Black" size="20.0" />
+        </font>
+    </Button>
+    <Button id="_mainMenuButton" layoutX="330.0" layoutY="609.0" mnemonicParsing="false" onAction="#ToMainMenuPage" onMouseEntered="#HoverEnter" onMouseExited="#HoverExit" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: Transparent;" text="Main Menu " textFill="WHITE">
+        <font>
+            <Font name="Segoe UI Black" size="20.0" />
+        </font>
+    </Button>
+   <Label fx:id="_guessAndAnswerLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="409.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="614.0" text="You Guessed: 3864759 and The Correct Number is: 21876327" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="_percentageAverageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="353.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="614.0" text="You Scored Above 20%" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="15.0" />
+      </font>
+   </Label>
+</AnchorPane>

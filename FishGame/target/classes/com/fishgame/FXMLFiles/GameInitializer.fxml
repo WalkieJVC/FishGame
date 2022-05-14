@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="640.0" style="-fx-background-color: Transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fishgame.GameInitializerController">
+   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="267.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="82.0">
+      <Image url="@../ImageFiles/FishGameLogo.png" />
+   </ImageView>
+   <Label layoutX="225.0" layoutY="232.0" text="FishGame" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="40.0" />
+      </font>
+   </Label>
+   <Label layoutX="269.0" layoutY="280.0" text="By WalkieJVC" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="15.0" />
+      </font>
+   </Label>
+   <Label layoutX="185.0" layoutY="330.0" text="Player Information" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="30.0" />
+      </font>
+   </Label>
+   <TextField fx:id="_gamertagField" layoutX="120.0" layoutY="403.0" prefHeight="35.0" prefWidth="400.0" promptText="Gamertag" style="-fx-background-color: Transparent; -fx-text-inner-color: White;">
+      <font>
+         <Font name="Segoe UI Black" size="15.0" />
+      </font>
+   </TextField>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#24578a" height="3.0" layoutX="120.0" layoutY="438.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-width: 0;" width="400.0" />
+   <Label layoutX="120.0" layoutY="441.0" prefHeight="17.0" prefWidth="400.0" text="Requirements: No Special Characters, 5 to 25 Characters Long" textFill="#b2b2b2">
+      <font>
+         <Font name="Segoe UI Black" size="12.0" />
+      </font></Label>
+   <Label fx:id="_countryLabel" layoutX="128.0" layoutY="495.0" text="Country" textFill="#b2b2b2">
+      <font>
+         <Font name="Segoe UI Black" size="15.0" />
+      </font>
+   </Label>
+   <ComboBox id="_sizesField" fx:id="_countryField" layoutX="120.0" layoutY="488.0" onAction="#Select" onMouseEntered="#RotateArrow" onMouseExited="#ResetArrow" prefHeight="35.0" prefWidth="400.0" style="-fx-background-color: transparent;" styleClass="_comboBox" stylesheets="@../CSSFiles/ComboBoxStyles.css" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#24578a" height="3.0" layoutX="120.0" layoutY="523.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-width: 0;" width="400.0" />
+   <Button id="_playButton" layoutX="120.0" layoutY="556.0" mnemonicParsing="false" onAction="#ToGamePage" onMouseEntered="#HoverEnter" onMouseExited="#HoverExit" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: Transparent;" text="Play" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="20.0" />
+      </font>
+   </Button>
+   <Button id="_clearButton" layoutX="265.0" layoutY="556.0" mnemonicParsing="false" onAction="#Clear" onMouseEntered="#HoverEnter" onMouseExited="#HoverExit" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: Transparent;" text="Clear" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="20.0" />
+      </font>
+   </Button>
+   <Button id="_backButton" layoutX="410.0" layoutY="556.0" mnemonicParsing="false" onAction="#ToMainMenuPage" onMouseEntered="#HoverEnter" onMouseExited="#HoverExit" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: Transparent;" text="Back" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="20.0" />
+      </font>
+   </Button>
+   <Label fx:id="_messageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="120.0" layoutY="622.0" prefHeight="17.0" prefWidth="400.0" textAlignment="CENTER" textFill="#b2b2b2">
+      <font>
+         <Font name="Segoe UI Black" size="12.0" />
+      </font>
+   </Label>
+</AnchorPane>

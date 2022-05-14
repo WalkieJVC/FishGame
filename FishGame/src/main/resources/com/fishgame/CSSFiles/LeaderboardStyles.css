@@ -1,0 +1,72 @@
+.table-view{
+    -fx-border-color: rgb(6, 19, 33);
+    -fx-font-family: "Segoe UI Black";
+}
+
+.table-view .placeholder .label{
+    -fx-text-fill: White;
+}
+
+.table-row-cell, {
+    -fx-table-cell-border-color: #061321;
+}
+
+.table-view .table-column {
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header {
+    -fx-background-color: rgb(6, 19, 33);
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: White;
+}
+
+.table-view .scroll-bar:horizontal .increment-button,
+.table-view .scroll-bar:horizontal .decrement-button,
+.table-view .scroll-bar:horizontal .increment-arrow,
+.table-view .scroll-bar:horizontal .decrement-arrow
+{
+    -fx-padding: 0;
+    -fx-shape: "";
+}
+
+.table-row-cell:even {
+  -fx-background-color: rgba(13, 39, 67, .5);
+}
+.table-row-cell:odd {
+  -fx-background-color: rgba(10, 30, 50, .5);
+}
+
+.table-column{
+    -fx-text-fill: White;
+}
+
+/* ComboBox Scroll Bar */
+.scroll-bar:vertical {
+    -fx-pref-width: 1em;
+}
+
+/* ComboBox Scroll Bar Track */
+.scroll-bar:vertical .track{
+    -fx-background-color: #0a1e33;
+    -fx-padding: 0;
+}
+
+/* ComboBox Scroll Bar Thumb */
+.scroll-bar:vertical .thumb{
+    -fx-background-color: #123050;
+    -fx-padding: 0;
+}
+
+/* ComboBox Scroll Bar Settings */
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button {
+    -fx-background-insets: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+}
+
+.scroll-bar:vertical .increment-button .increment-arrow, .scroll-bar:vertical .decrement-button .decrement-arrow,
+.scroll-bar .increment-button, .scroll-bar .decrement-button{
+    -fx-padding: 0 0 0 0;
+}
+

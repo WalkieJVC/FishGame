@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="640.0" style="-fx-background-color: Transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fishgame.GameController">
+   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="267.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="50.0">
+      <Image url="@../ImageFiles/FishGameLogo.png" />
+   </ImageView>
+   <Label layoutX="225.0" layoutY="200.0" text="FishGame" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="40.0" />
+      </font>
+   </Label>
+   <Label layoutX="269.0" layoutY="248.0" text="By WalkieJVC" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="15.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="309.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="560.0" text="Guess the # of fishes on day:" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="_guessingDayLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="324.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="560.0" text="#" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="60.0" />
+      </font>
+   </Label>
+   <Label fx:id="_initialPopulation" alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="400.0" prefWidth="560.0" text="Population on day 1: #####" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="_finalPopulation" alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="426.0" prefWidth="560.0" text="Population on day #: ############" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="15.0" />
+      </font>
+   </Label>
+   <TextField fx:id="_guessNumberField" layoutX="120.0" layoutY="487.0" prefHeight="35.0" prefWidth="400.0" promptText="Number Of Fishes" style="-fx-background-color: Transparent; -fx-text-inner-color: White;">
+      <font>
+         <Font name="Segoe UI Black" size="15.0" />
+      </font>
+   </TextField>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#24578a" height="3.0" layoutX="120.0" layoutY="522.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-width: 0;" width="400.0" />
+   <Button id="_guessButton" layoutX="190.0" layoutY="565.0" mnemonicParsing="false" onAction="#MakeGuess" onMouseEntered="#HoverEnter" onMouseExited="#HoverExit" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: Transparent;" text="Guess" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="20.0" />
+      </font>
+   </Button>
+   <Button id="_clearButton" layoutX="340.0" layoutY="565.0" mnemonicParsing="false" onAction="#Clear" onMouseEntered="#HoverEnter" onMouseExited="#HoverExit" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: Transparent;" text="Clear" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Black" size="20.0" />
+      </font>
+   </Button>
+   <Label fx:id="_messageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="120.0" layoutY="649.0" prefHeight="17.0" prefWidth="400.0" textAlignment="CENTER" textFill="#b2b2b2">
+      <font>
+         <Font name="Segoe UI Black" size="12.0" />
+      </font>
+   </Label>
+</AnchorPane>
