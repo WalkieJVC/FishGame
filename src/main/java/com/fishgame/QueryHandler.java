@@ -226,9 +226,9 @@ public class QueryHandler {
     //EstablishConnection Method
     private void EstablishConnection() {
         //Local Variables
-        String _databaseName = "FishGame";                                  //Database Name
-        String _databaseUsername = "root";                                  //Database UserName
-        String _databasePassword = "12.258.Games.By.Walkie.JVC.@!";         //Database Password
+        String _databaseName = "name";                                  //Database Name
+        String _databaseUsername = "username";                                  //Database UserName
+        String _databasePassword = "password";         //Database Password
         String _url = "jdbc:mysql://localhost:3306/" + _databaseName;       //Database URL
 
         //Try-Catch
