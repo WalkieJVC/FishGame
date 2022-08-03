@@ -137,6 +137,7 @@ public class QueryHandler {
     public ArrayList<TableObject> CallGetTopTwenty() {
         //Initializes the procedure String
         _procedure = "call `fishgame`.`GetTopTwenty` ();";
+
         //Calls the ExecuteQuery Method and passes the stored procedure string as a parameter, the returned value gets assigned to _output.
         _output = ExecuteQuery(_procedure);
 
